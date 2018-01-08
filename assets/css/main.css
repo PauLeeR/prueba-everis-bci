@@ -1,0 +1,48 @@
+/*Menú superior derecha*/
+
+.navbar-nav>li>a{
+	padding-right: 30px;
+	color: #a5a4a4;
+	font-size: 18px;
+}
+
+.fa-phone{
+	color: red;
+	padding: 10px;
+    font-size: 20px;
+}
+
+.fa-search{
+	padding: 10px;
+	font-size: 25px;
+	color:#666666;
+	background-color: #e8e9ea;
+}
+
+.btn-red{
+	color: #f7f7f7;
+    background-color: red;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-right: 50px;
+    width: 90%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+#upperRight{
+	float: right;
+}
+
+/*Menú 2*/
+.logo-bci{
+	width: 50%;
+}
+
+.titular{
+	width: 50%;
+}
