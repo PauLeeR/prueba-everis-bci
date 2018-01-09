@@ -1,15 +1,32 @@
 /*Menú superior derecha*/
 
+.bg-light{
+	background-color: transparent !important;
+}
+
 .navbar-nav>li>a{
-	padding-right: 30px;
-	color: #a5a4a4;
 	font-size: 18px;
+	color: #7f7f82 !important;
+}
+
+.nav-link {
+	/*display: inline-flex;*/
+	padding: 0;
+	color: #f4f4f4;
+}
+
+.nav-item{
+	padding-right: 2.0rem;
+}
+
+.active{
+	padding: 10px;
 }
 
 .fa-phone{
 	color: red;
-	padding: 10px;
-    font-size: 20px;
+	padding: 5px;
+	font-size: 20px;
 }
 
 .fa-search{
@@ -21,13 +38,13 @@
 
 .btn-red{
 	color: #f7f7f7;
-    background-color: red;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: lighter;
-    margin-right: 50px;
-    width: 90%;
+	background-color: red;
+	border: none;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-right: 50px;
+	width: 90%;
 }
 
 ul{
@@ -41,8 +58,60 @@ ul{
 /*Menú 2*/
 .logo-bci{
 	width: 50%;
+	padding: 30px;
 }
 
 .titular{
-	width: 50%;
+	width: 30%;
+	float: left;
+}
+
+.info-titular{
+	font-size: 12px;
+	color: #107dcc;
+}
+
+.last-access{
+	color: #7f7f82;
+}
+.customer-service{
+	width: 30px; 
+	height: 30px;
+}
+
+#upperMenu{
+	float: right;
+	margin-top: -45px;
+}
+
+.fa-exclamation-triangle{
+	font-size: 25px;
+	color: #37383a;
+}
+
+.channels, .sac{
+	position: relative;
+	bottom: -20px;
+}
+
+/*Menú toggle*/
+.navbar{
+	padding: 1.0rem 4rem;
+	padding-bottom: 25px;
+    font-weight: bolder;
+    word-spacing: 12px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+	z-index: 99;
+}
+
+
+.navbar a:hover {  
+    color: #30a333; /*no me funciona que cambie el color del texto a verde al hacer hover*/
+	border-bottom: 2px solid #30a333;
+	width: 100%;
+	padding-bottom: 0px;
+}
+
+hr{
+	margin-top: 3rem;
 }
