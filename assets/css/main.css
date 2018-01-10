@@ -1,5 +1,8 @@
-/*Menú superior derecha*/
+body{
+	font-family: 'Roboto', sans-serif;
+}
 
+/*Menú superior derecha*/
 .bg-light{
 	background-color: transparent !important;
 }
@@ -98,20 +101,162 @@ ul{
 .navbar{
 	padding: 1.0rem 4rem;
 	padding-bottom: 25px;
-    font-weight: bolder;
-    word-spacing: 12px;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+	font-weight: bolder;
+	word-spacing: 12px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
 	z-index: 99;
 }
 
+a{
+	text-decoration: none;
+}
 
 .navbar a:hover {  
-    color: #30a333; /*no me funciona que cambie el color del texto a verde al hacer hover*/
-	border-bottom: 2px solid #30a333;
+	color: #31b735; /*no me funciona que cambie el color del texto a verde al hacer hover*/
+	border-bottom: 2px solid #31b735;
 	width: 100%;
 	padding-bottom: 0px;
 }
 
 hr{
 	margin-top: 3rem;
+}
+
+
+/*Menú vertical izq*/
+.flex-column{
+	padding-left: 0px;
+	padding-top: 30px;
+}
+
+.mb-3:hover{
+	color: #107dcc;
+}
+
+.col-md-3{
+	padding-left: 0px;
+}
+
+#exampleAccordion{
+	padding-top: 10px;
+	color: #7a7a7a;
+}
+
+#leftColumn>a{
+	color: #7a7a7a;
+}
+
+.columnLeft{
+	color: black;
+	border-bottom: 1px solid #edeaea;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+#cuenta{
+	padding-left: 0px;
+}
+
+/*sección main*/
+.colDer{
+	background-color: #f7f9f9;
+	width: 100%;
+}
+
+.colDer>h4{
+	padding: 6% 2%;
+	color: #107dcc;
+}
+
+.todo{
+	width: 100%;
+}
+
+.bg-white{
+	padding: 15px;
+}
+
+.left>h5{
+	font-size: 18px;
+	color: #31b735;
+}
+
+.left>p{
+	font-size: 12px;
+}
+
+.date{
+	color: #cecece;
+}
+
+.botonCta{
+	color: #cecece;
+	background-color: transparent;
+	border-radius: 0px;
+	border-color: 1px solid #cecece;
+	padding: 5px;
+}
+
+.middle{
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.ctacte{
+	margin-bottom: 5px;
+	font-weight: bolder;
+}
+
+.saldoPesos{
+	font-size: 40px;
+	font-weight: bolder;
+	color: #31b735;
+}
+
+.montos{
+	color: #31b735; 
+	font-size: 12px;
+}
+
+.right{
+	font-size: 14px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.right>p{
+	margin-bottom: 5px;
+}
+
+/*fila inferior*/
+.down{
+	background-color: #fff;
+	margin-top: 2%;
+	padding: 2%;
+	color: #107dcc;
+	margin-right: -110px;
+}	
+
+.redIcon {
+	color: red;
+}
+
+.img-bill{
+	position: relative;
+	width: 25px;
+	height: 25px;
+}
+
+.increase{
+	position: relative;
+	width: 25px;
+	height: 25px;
+}
+
+.fa-exchange, .fa-long-arrow-left{
+	font-size: 1.5rem;
 }

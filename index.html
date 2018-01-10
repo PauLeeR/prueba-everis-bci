@@ -18,7 +18,7 @@
 </head>
 <body>	
 	<!-- Menú 1 Superior Derecha-->
-	<nav class="navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar-expand-lg navbar-light bg-light justify-content-between">
 		<div class="collapse navbar-collapse" id="upperRight">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
@@ -34,6 +34,7 @@
 		</div>
 	</nav>
 	<!-- Fin Menú 1-->
+	<!-- Menú 2-->
 	<nav class="navbar-expand-lg navbar-light bg-light justify-content-between">
 		<a class="navbar-brand" href="#"><img src="assets/img/logobci.png" alt="Bci Personas" class="logo-bci"></a>
 		<div class="collapse navbar-collapse" id="upperMenu">
@@ -60,13 +61,15 @@
 		</div>
 	</nav>
 	<hr>
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between navigation">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- Fin Menú 2-->
+	<!-- Menú 3, principal-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
+		<div class="navbar-collapse collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="#">Mi Banco <span class="sr-only">(current)</span></a>
 				</li>
@@ -88,19 +91,127 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">Seguros</a>
 				</li>
-
 			</ul>
 		</div>
 	</nav>
+	<!-- Fin Menú 3 -->
+	<!-- fin barras de navegación -->
 
-	<!-- fin barra de navegación -->
+	<section id="main">
+		<div class="container todo">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="flex-column">
+						<li class="nav-item columnLeft">				
+							<div id="exampleAccordion" data-children=".item">
+								<div class="item">
+									<a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" role="button" aria-expanded="true" aria-controls="exampleAccordion1"> Mi Cuenta <i class="fa fa-chevron-right pull-right" id="cuenta" aria-hidden="true"></i>
+									</a>
+									<div id="exampleAccordion1" class="collapse" role="tabpanel">
+										<p class="mb-3">
+											Saldo y Últimos Movimientos
+										</p>
+										<p class="mb-3">
+											Cartola Actual
+										</p>
+										<p class="mb-3">
+											Cartola Histórica
+										</p>
+										<p class="mb-3">
+											Cheques
+										</p>
+										<p class="mb-3">
+											Depósitos
+										</p>
+										<p class="mb-3">
+											Certificados
+										</p>
+										<p class="mb-3">
+											Mi Calendario
+										</p>
+										<p class="mb-3">
+											Mis Contratos
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item columnLeft">
+							<div id="exampleAccordion" data-children=".item">							
+								<a data-toggle="collapse" data-parent="#" href="#" role="button" aria-expanded="true" aria-controls="">Línea de Sobregiro <i class="fa fa-chevron-right pull-right" id="sobregiro" aria-hidden="true"></i>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item columnLeft">
+							<div id="exampleAccordion" data-children=".item">							
+								<a data-toggle="collapse" data-parent="#" href="#" role="button" aria-expanded="true" aria-controls="">Otras Cuentas <i class="fa fa-chevron-right pull-right" id="otrasCtas" aria-hidden="true"></i>
+								</a>
+							</div>	
+						</li>
+						<li class="nav-item columnLeft">
+							<div id="exampleAccordion" data-children=".item">							
+								<a data-toggle="collapse" data-parent="#" href="#" role="button" aria-expanded="true" aria-controls="">Mis Datos Personales <i class="fa fa-chevron-right pull-right" id="personalData" aria-hidden="true"></i>
+								</a>
+							</div>	
+						</li>
+						<li class="nav-item columnLeft">
+							<div id="exampleAccordion" data-children=".item">							
+								<a data-toggle="collapse" data-parent="#" href="#" role="button" aria-expanded="true" aria-controls="">SMS Bci <i class="fa fa-chevron-right pull-right" id="sms" aria-hidden="true"></i>
+								</a>
+							</div>	
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-9 colDer">
+					<h4 class="flex-column">Saldo y últimos Movimientos</h4>					
+					<div class="row bg-white">
+						<div class="col-md-4 left">
+							<h5>Pablo Andres Monares Vallejos</h5>
+							<p>RUT: 00.000.000-4</p>
+							<p>Saldo Disponible al: <span class="date">23-06-2017</span></p>
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle botonCta" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Cuenta corriente Nº27149528
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Cuenta corriente Nº27149528</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 middle">			
+							<p class="ctacte">Cuenta corriente Nº27149528</p>
+							<p class="saldo">Saldo Disponible</p>
+							<p class="saldoPesos">$198.300</p>
+						</div>
+						<div class="col-md-4 right">
+							<p>Saldo contable<span class="montos pull-right">$198.300</span></p>
+							<p>Retenciones<span class="montos pull-right">$9.990</span></p>
+							<p>Sobregiro Disponible<span class="montos pull-right">$9.990</span></p>
+							<p>Sobregiro Utilizado<span class="montos pull-right">$9.990</span></p>
+							<p>Línea de Emergencia<span class="montos pull-right">$9.990</span></p>
+						</div>
+					</div>
+					<div class="row down">
+						<div class="col"><a href="#" class="transferir"><i class="fa fa-exchange" aria-hidden="true"></i> Transferir</a>
+						</div>
+						<div class="col bill"><img src="assets/img/bill-512.png" class="img-bill"> Pagar cuenta</div>
+						<div class="col"><img src="assets/img/money_increase.png" class="increase">Solicitar aumento</div>
+						<div class="col"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Pagar sobregiro</div>
+						<div class="col redIcon"><img src="assets/img/cogwheels.png" class="img-bill redIcon"></i> Personalizar </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
 
 
-	<!-- Script de jQuery y Bootstrap -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
+
+<!-- Script de jQuery y Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
